@@ -37,39 +37,191 @@
 </div>
 
 <div class="story-page-layout with-tabs">
-<aside class="story-nav"><h3><a href="../career-story.html?tab=full">Series Intro</a></h3><a class="" href="part1.html">Part 1 — TELUS</a>
+<aside class="story-nav"><h3><a href="../career-story.html?tab=full">Series Intro</a></h3>
+<a class="" href="part1.html">Part 1 — TELUS</a>
 <a class="" href="part2.html">Part 2 — Symantec</a>
 <a class="" href="part3.html">Part 3 — Immunet</a>
 <a class="active" href="part4.html">Part 4 — Sourcefire</a>
 <a class="" href="part5.html">Part 5 — Early Cisco</a>
 <a class="" href="part6.html">Part 6 — Later Cisco</a>
-<a class="" href="part7.html">Part 7 — After Cisco</a></aside>
+<a class="" href="part7.html">Part 7 — After Cisco</a>
+</aside>
 <main class="story-main article">
 <h1>Part 4: Scaling Up Without Losing Ourselves, and the First Time I Questioned Whether Coding Was Really My Thing</h1>
-<p>When Immunet was acquired by Sourcefire, it felt like a breakthrough. It felt like proof that what we had built mattered.</p>
-<p>A bigger, respected security company had looked at what we had made and said: yes, this is real, this is valuable, and we want it.</p>
+<p>When Immunet was acquired by Sourcefire, it felt like a breakthrough.</p>
+<p>Not just financially. Not just strategically. Emotionally too.</p>
+<p>It felt like proof that what we had built mattered.</p>
+<p>For a long time, we had been the small team with the unusual idea. The ones trying to build a cloud-based antivirus platform at a time when that still felt relatively new. The ones moving fast, improvising, learning as we went, and somehow keeping the whole thing alive with a tiny group of very intense, very capable people.</p>
+<p>Now a bigger, respected security company had looked at what we had made and said: yes, this is real, this is valuable, and we want it.</p>
+<p>That felt good.</p>
+<p>It also meant the easy part—if there ever had been an easy part—was over.</p>
 <h2>The Enterprise Version Was Only the Beginning</h2>
 <p>By the time the acquisition closed, we had already spent an enormous amount of energy building the enterprise version of the product.</p>
-<p>The enterprise version being “done” didn’t mean the work slowed down. It meant the next phase began immediately. More features, more polish, more control, more visibility, more robustness.</p>
-<h2>The Client Side Was Still My World</h2>
-<p>My work was still heavily centered on the client: installer, GUI, build process, client-side plumbing, endpoint behavior, and how information was surfaced to users and sent back into the broader system.</p>
-<p>But the meaning of client-side work had changed. The endpoint was part of a larger system that depended on cloud intelligence, reporting pipelines, event visibility, policy enforcement, and coordination between multiple moving parts.</p>
+<p>That was the goal. Sourcefire was not interested in buying a quirky, mostly free consumer antivirus product with community features and a loyal user base. They wanted an enterprise-grade security product that could sit inside a broader security offering and be sold to businesses that cared about visibility, control, reporting, and real protection.</p>
+<p>So that’s what we built toward.</p>
+<p>There had been demos. Days of meetings. Leadership discussions. Presentations. Pressure around timelines. Pressure around what had to be finished and how credible it had to look. When the acquisition finally closed, there was a real sense of accomplishment.</p>
+<p>But there was no pause after that.</p>
+<p>The enterprise version being “done” didn’t mean the work slowed down. It meant the next phase began immediately.</p>
+<p>Now we had to make it truly enterprise-ready.</p>
+<p>That meant more features, more polish, more control, more visibility, and more robustness. It meant building the kinds of capabilities that enterprise customers expected once the product was no longer a promising startup idea but a real offering inside a bigger security company.</p>
+<p>So the work didn’t relax.</p>
+<p>It expanded.</p>
+<h2>The Client Side Was Still My World — But That World Was Getting Bigger</h2>
+<p>At that stage, my work was still heavily centered on the client.</p>
+<p>That was still my home base:</p>
+<ul>
+  <li>the installer</li>
+  <li>the GUI</li>
+  <li>the build process</li>
+  <li>client-side plumbing</li>
+  <li>the behavior of the endpoint itself</li>
+  <li>how information was surfaced to users and sent back into the broader system</li>
+</ul>
+<p>But the meaning of “client-side work” had changed.</p>
+<p>Earlier in my career, client work often meant a fairly contained piece of software running on one machine with relatively limited awareness of the broader world around it. At Immunet and then into Sourcefire, the endpoint had become something much more ambitious. It wasn’t just a local program anymore. It was part of a larger system that depended on:</p>
+<ul>
+  <li>cloud intelligence</li>
+  <li>reporting pipelines</li>
+  <li>event visibility</li>
+  <li>policy enforcement</li>
+  <li>coordination between multiple moving parts</li>
+</ul>
+<p>So when I say I was still focused on the client, that doesn’t mean I was isolated from the rest of the system.</p>
+<p>In practice, it meant I was working in the middle of a very active boundary between the local machine and everything beyond it.</p>
+<p>We were adding:</p>
+<ul>
+  <li>more enterprise-focused capabilities</li>
+  <li>more endpoint visibility</li>
+  <li>more event reporting</li>
+  <li>richer information about what was happening on each machine</li>
+  <li>more integration with the systems that made those events useful to administrators</li>
+</ul>
+<p>That work had a lot of complexity hidden inside it.</p>
+<p>A seemingly simple feature request could ripple through:</p>
+<ul>
+  <li>detection logic</li>
+  <li>local event handling</li>
+  <li>storage and buffering</li>
+  <li>GUI presentation</li>
+  <li>update and deployment systems</li>
+  <li>communication with backend services</li>
+</ul>
+<h2>It wasn’t just “add this feature.” It was always “how does this fit into the rest of the product?”</h2>
+<p>And that question increasingly mattered to me.</p>
+<h2>Security Became More Real the Deeper I Went</h2>
+<p>This was also the period where my understanding of the security domain kept expanding.</p>
+<p>At Immunet, I had already been thrown into the deep end of cybersecurity in a way I had never experienced at TELUS or even Symantec. But during this phase, I was learning more and more what it meant to work on a product whose entire purpose was protection.</p>
+<p>The language that had initially felt foreign started becoming more familiar:</p>
+<ul>
+  <li>detections</li>
+  <li>false positives</li>
+  <li>false negatives</li>
+  <li>signatures</li>
+  <li>dispositions</li>
+  <li>engines</li>
+  <li>telemetry</li>
+  <li>event flows</li>
+  <li>endpoint activity</li>
+  <li>policy and reporting</li>
+</ul>
+<p>It wasn’t that I became some kind of top-tier security expert overnight. Far from it. But I was getting more fluent in the world. The product logic, the concerns, the trade-offs, and the importance of all of it started becoming more real to me.</p>
+<p>I also became much more aware of two priorities that simply had not been emphasized in my earlier roles:</p>
+<p>performance and security.</p>
+<p>An antivirus product could not afford to be seen as heavy, slow, or intrusive. If it hogged system resources, users and administrators would hate it, no matter how good its protection was.</p>
+<p>And it absolutely could not become a vulnerability itself. Security software had to be secure. That sounds obvious now, but living inside a product where that concern was central was different from just understanding it intellectually. It changed how people thought about code, about testing, about architecture, about even small decisions.</p>
+<p>Those pressures shaped the work in ways I hadn’t experienced before.</p>
 <h2>The Team Grew, and So Did My Unofficial Responsibilities</h2>
-<p>As the product became more successful, we grew. New office. More hiring. More people. And with that growth came a new kind of work for me.</p>
-<p>I got more involved in interviewing, onboarding, explaining how pieces of the product worked, and helping bridge conversations between different parts of the organization.</p>
-<p>At the time, I did not think of this as leadership. If anything, I saw it as dangerous. These were the moments where I felt like I might be exposed.</p>
-<p>But once I was actually in those situations, I felt engaged. Helping someone understand something or helping a group get aligned energized me in a way sitting alone with a block of code often did not.</p>
-<h2>A Growing Sense That I Was Different</h2>
-<p>As we hired more people, I started noticing something else. A lot of them genuinely seemed to want to sit down and code. For me, that was becoming less and less true.</p>
-<p>I could still do the work. But I increasingly noticed that I had to make myself sit down and do the deep implementation part in a way that others didn’t seem to.</p>
-<p>The parts I naturally gravitated toward were helping people understand things, talking through system behavior, connecting ideas across teams, and clarifying what we were actually trying to build.</p>
-<h2>The Startup Culture Was Still Alive</h2>
-<p>The Sourcefire acquisition did not immediately kill what made Immunet special. For a while, it felt like the best of both worlds: more resources, more sales support, and a larger platform, while still feeling close to the product and each other.</p>
-<p>That feeling created energy and meaning. Later, when that feeling started to disappear, I would understand how much my motivation had depended on it.</p>
+<p>As the product became more successful, we grew.</p>
+<p>We got a new office.<br>We hired aggressively.<br>The small, intensely aligned group from Immunet became a much larger team.</p>
+<p>And with that growth came a new kind of work for me.</p>
+<p>Without ever really being told, “this is your new responsibility,” I started taking on more of the people and communication work that naturally appears when a system and a team both get more complex.</p>
+<p>I got more involved in:</p>
+<ul>
+  <li>interviewing candidates</li>
+  <li>helping assess technical fit</li>
+  <li>onboarding new team members</li>
+  <li>explaining how pieces of the product worked</li>
+  <li>helping bridge conversations between different parts of the organization</li>
+</ul>
+<p>At the time, I did not think of any of this as leadership.</p>
+<p>If anything, I saw it as dangerous.</p>
+<p>These were the moments where I felt like I might be exposed. Times when someone could ask a question I couldn’t answer. Times when I might be expected to explain something at a level I didn’t feel I had earned. Times when it might become obvious that I didn’t feel like one of the “real” technical people.</p>
+<p>And yet, something kept happening that I couldn’t ignore.</p>
+<p>Once I was actually in those situations—once I was sitting with a new hire, explaining how part of the product worked, or once I was in the middle of a cross-team discussion helping connect different understandings of a problem—I felt engaged.</p>
+<p>The anxiety was often strongest before the interaction.</p>
+<p>But during it, time moved differently.</p>
+<p>I would get into the flow of helping someone understand something, or helping a group get aligned, and the fear would drop away. I wouldn’t suddenly feel like an expert, but I would feel useful. More than that, I would feel energized in a way that sitting alone with a block of code often did not.</p>
+<p>That pattern started becoming harder to ignore.</p>
+<h2>A Growing Sense That I Was Different From the People Around Me</h2>
+<p>As we hired more people, I started noticing something else.</p>
+<p>The original Immunet team had intimidated me because they were genuine experts, especially in security. Their technical depth was obvious, and I had always felt like I was trying to keep up.</p>
+<p>But as the team expanded, the range of people broadened too. Not every new hire had the same depth in security or the same level of obsession with the domain. Many of them were just strong technical people who loved building software.</p>
+<p>And that difference revealed something uncomfortable to me.</p>
+<p>A lot of them genuinely seemed to want to sit down and code.</p>
+<p>Not in the performative sense of “I’m a good employee, therefore I will code.” I mean they actually enjoyed it. It seemed to be where they naturally wanted to spend their time. Sitting in front of a machine, solving implementation problems, building systems, staying deep in the technical work — that was not just tolerable to them, it looked like the most natural thing in the world.</p>
+<p>For me, that was becoming less and less true.</p>
+<p>Earlier in my career, I had assumed that resistance to work was normal. I thought, of course you’re not always going to want to sit down and do it. That’s what makes it work. You push through. You put in the effort. This is just what jobs are like.</p>
+<p>But now I was seeing something else. The people around me didn’t all seem to be forcing themselves into those hours of development. Many of them seemed to come alive there.</p>
+<p>I could absolutely still do the work. I could contribute. I could solve problems. But I increasingly noticed that I had to make myself sit down and do the deep implementation part in a way that others around me didn’t seem to.</p>
+<p>At the same time, the parts I naturally gravitated toward were:</p>
+<ul>
+  <li>helping people understand things</li>
+  <li>talking through system behavior</li>
+  <li>connecting ideas across teams</li>
+  <li>making sense of complex requirements</li>
+  <li>clarifying what we were actually trying to build</li>
+</ul>
+<p>That didn’t yet lead to a grand realization. I didn’t suddenly conclude, “I’m not meant to be a developer.” But it did plant a question in me that was hard to shake:</p>
+<blockquote>What if the part of this work I’m best at isn’t actually the coding?</blockquote>
+<p>At the time, that felt almost disloyal to think. The dominant message around me was still that coding was the core of the value. Everything else was secondary.</p>
+<p>So I kept treating that question as something to suppress.</p>
+<p>But it was there.</p>
+<h2>The Startup Culture Was Still Alive — and That Mattered More Than I Realized</h2>
+<p>For all the internal tension, the external environment still felt good.</p>
+<p>That’s important.</p>
+<p>The Sourcefire acquisition did not immediately kill what had made Immunet special. In fact, for a while, it felt like the best of both worlds. We had more resources, more sales support, more visibility, and a larger platform to build into, but we still felt close to:</p>
+<ul>
+  <li>the product</li>
+  <li>the users</li>
+  <li>the reasons behind the work</li>
+  <li>each other</li>
+</ul>
+<p>Ideas still came from real conversations. Product needs still felt visible and understandable. We still had a sense that what we were doing mattered for reasons beyond just moving numbers around inside a large company.</p>
+<p>There was still a feeling of shared responsibility. Not hierarchy, not bureaucracy, not “this is above your pay grade.” More like:</p>
+<ul>
+  <li>we all own this</li>
+  <li>we all answer to each other</li>
+  <li>we all need to make this work</li>
+</ul>
+<p>That feeling creates energy. It creates meaning. It creates a willingness to work hard because the hard work still feels connected to something real.</p>
+<p>And I didn’t fully appreciate at the time how much that mattered to me.</p>
+<p>Later, when that feeling started to disappear, I would finally understand how much of my motivation had depended on it.</p>
 <h2>What This Period Taught Me</h2>
-<p>This phase pushed me deeper into security product development, richer endpoint visibility, event reporting, client-side architecture, performance-conscious engineering, and security-aware development.</p>
-<p>It also sharpened a question: just because I can do this work, does that mean this is the work I’m actually best suited for?</p>
-<p><a href="../career-story.html">← Back to Career Story</a></p>
+<p>This phase of my career taught me a lot at once.</p>
+<p>Technically, it pushed me deeper into:</p>
+<ul>
+  <li>real security product development</li>
+  <li>richer endpoint visibility and event reporting</li>
+  <li>more complex client-side architecture</li>
+  <li>performance-conscious engineering</li>
+  <li>security-aware software development</li>
+</ul>
+<p>Professionally, it drew me further into the unofficial people and alignment work that I still didn’t quite know how to value:</p>
+<ul>
+  <li>interviewing</li>
+  <li>onboarding</li>
+  <li>explaining</li>
+  <li>bridging gaps between teams</li>
+  <li>helping make a growing system understandable</li>
+</ul>
+<p>Personally, it sharpened a question that had been quietly growing in me for a while:</p>
+<blockquote>Just because I can do this work… does that mean this is the work I’m actually best suited for?</blockquote>
+<p>I still didn’t know how to answer that question.</p>
+<p>And I definitely didn’t know what to do with it.</p>
+<p>But it was getting louder.</p>
+<p>And the conditions that had helped me ignore it were not going to last forever.</p>
+
+<p><a href="../career-story.html?tab=full">← Back to Career Story</a></p>
 </main>
 </div>
 <footer class="footer">© Scott Kurz</footer>

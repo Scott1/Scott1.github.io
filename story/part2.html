@@ -37,40 +37,138 @@
 </div>
 
 <div class="story-page-layout with-tabs">
-<aside class="story-nav"><h3><a href="../career-story.html?tab=full">Series Intro</a></h3><a class="" href="part1.html">Part 1 — TELUS</a>
+<aside class="story-nav"><h3><a href="../career-story.html?tab=full">Series Intro</a></h3>
+<a class="" href="part1.html">Part 1 — TELUS</a>
 <a class="active" href="part2.html">Part 2 — Symantec</a>
 <a class="" href="part3.html">Part 3 — Immunet</a>
 <a class="" href="part4.html">Part 4 — Sourcefire</a>
 <a class="" href="part5.html">Part 5 — Early Cisco</a>
 <a class="" href="part6.html">Part 6 — Later Cisco</a>
-<a class="" href="part7.html">Part 7 — After Cisco</a></aside>
+<a class="" href="part7.html">Part 7 — After Cisco</a>
+</aside>
 <main class="story-main article">
 <h1>Part 2: Learning “Real” Engineering… and Realizing It Still Wasn’t Quite Right</h1>
-<p>After leaving TELUS, I told myself a simple story. The problem wasn’t me. The problem was the environment.</p>
-<p>It was too chaotic. Too reactive. Too improvised. We were building software quickly, but not well. We were getting results, but I didn’t trust the foundation. So when I left, I believed I was leaving behind the wrong environment.</p>
-<p>The answer, I thought, was to find the opposite. I wanted somewhere bigger. More established. More disciplined. Somewhere with experts. Somewhere I could finally learn how software was actually supposed to be built.</p>
+<p>After leaving TELUS, I told myself a simple story.</p>
+<p>The problem wasn’t me.<br>The problem was the environment.</p>
+<p>It was too chaotic. Too reactive. Too improvised. We were building software quickly, but not well. We were getting results, but I didn’t trust the foundation. I had spent years feeling uneasy about how we worked, uneasy about what we were doing to people’s jobs, uneasy about the lack of process, and uneasy about how little I trusted my own instincts. So when I left, I believed I was leaving behind the wrong environment.</p>
+<p>The answer, I thought, was to find the opposite.</p>
+<p>I wanted somewhere bigger. More established. More disciplined. Somewhere with experts. Somewhere I could finally learn how software was actually supposed to be built.</p>
 <p>That search led me to Symantec.</p>
+<p>At the time, Symantec was one of the biggest names in security software. They made Norton Antivirus. They protected millions of machines. In my mind, if anyone knew what they were doing, it had to be them. This was a company whose product was software security. Not only were they building software, they were building software meant to defend people from malicious software. If there was ever a place where best practices, engineering rigor, and real technical maturity would exist, this had to be it.</p>
+<p>That was the story I told myself.</p>
+<p>And in fairness, there was some truth in it.</p>
+<p>But not in the simple way I wanted.</p>
 <h2>Getting In — and Still Feeling Like I Didn’t Belong</h2>
-<p>Even applying to Symantec felt intimidating. My imposter syndrome was already well established by then, even if I didn’t have a name for it yet.</p>
+<p>Even applying to Symantec felt intimidating.</p>
+<p>My imposter syndrome was already well established by then, even if I didn’t have a name for it yet. I was convinced I wasn’t good enough. I assumed the interview process would expose that immediately. I imagined a gauntlet of technical interviews with brilliant engineers who would see through me in minutes. I thought I would be humiliated.</p>
+<p>To my surprise, that didn’t happen.</p>
 <p>The interviews were serious, but not impossible. I got a lot of questions right. The ones I didn’t know, I admitted I didn’t know. Somehow, that didn’t disqualify me. I got the job.</p>
+<p>I remember feeling two things at once: relief, and pressure.</p>
+<p>Relief that I had made it in.</p>
+<p>Pressure that now I really had to prove I belonged there.</p>
 <h2>A More Professional World</h2>
-<p>Compared to TELUS, Symantec immediately felt more “real.” There were developers, leads, managers, directors, architects, QA teams, release engineering teams, technical support teams — an actual software organization.</p>
-<p>I joined a team working on Symantec Protection Network, or SPN. I was junior compared to most of the people around me, so I took on whatever work was available. That work turned out to be the installer.</p>
+<h2>Compared to TELUS, Symantec immediately felt more “real.”</h2>
+<p>There were developers, leads, managers, directors, architects, QA teams, release engineering teams, technical support teams—an actual software organization. The work was divided into clearly named functions. There were structures and processes around how software moved from development to release. There were specialized teams instead of a handful of people trying to do everything.</p>
+<p>From the outside, it looked like exactly what I had been hoping to find.</p>
+<p>I joined a team working on Symantec Protection Network, or SPN. It was a newer product intended to extend Symantec’s traditional antivirus offerings into areas like remote backup and remote desktop access. At the time, this was part of a broader trend. The idea that “software was eating the world” was gaining traction, and every company that made anything seemed to be trying to extend its reach into connected, software-driven services. SPN felt like Symantec’s way of reaching into that future.</p>
+<p>I was junior compared to most of the people around me, so I took on whatever work was available.</p>
+<p>That work turned out to be the installer.</p>
 <h2>Owning the Least Glamorous Part</h2>
-<p>The installer was not the exciting part of the product. It wasn’t malware detection. It wasn’t cloud infrastructure. It was the first thing a user encountered when installing the software on their machine.</p>
-<p>I worked with C++, InstallShield, and MSBuild. I wrote code around installer logic and custom actions. I also touched some client-side code and local storage using SQLite, but the installer remained my main responsibility.</p>
+<p>The installer was not the exciting part of the product.</p>
+<p>It wasn’t malware detection. It wasn’t cloud infrastructure. It wasn’t the logic that made remote backup or remote access work. It was the first thing a user encountered when installing the software on their machine. It had to make system-level changes, which meant it ran with elevated privileges. If it worked, nobody thought much about it. If it failed, it could create serious problems.</p>
+<p>It was also, at least at that time, a part of software development that nobody seemed particularly excited about. Installers were notorious for being brittle, hard to debug, and capable of causing confusing, system-wide issues. People didn’t love working on them. But they were critical.</p>
+<p>So that became my world.</p>
+<p>I worked with C++, InstallShield, and MSBuild. I wrote code around installer logic and custom actions. I also touched some of the client-side code and worked with local storage using SQLite, but the installer remained my main responsibility. It was important work, but it was not glamorous, and it certainly didn’t make me feel like I was getting closer to the kind of engineering mastery I thought I had come there to find.</p>
+<p>Still, I threw myself into it.</p>
+<p>That was one of the patterns I was starting to understand about myself: when I felt uncertain, I compensated with effort. If I didn’t feel smart enough, experienced enough, or naturally talented enough, then I would work harder. I would stay later. I would push more. I didn’t trust my instincts or my talent, but I did trust brute-force effort.</p>
+<p>So that’s what I brought to the job.</p>
 <h2>The Problem With “Proper Engineering”</h2>
-<p>For a while, I told myself I had found what I was looking for. The environment was more structured. The product was more serious. The company was clearly capable of building and shipping software at scale.</p>
-<p>But after a while, something familiar started to creep in. That same uneasy feeling. Something still didn’t feel quite right.</p>
-<p>The teams were siloed. I had expected mentorship and a clear path to growth. Instead, I was given work and expected to complete it. I was still, in many ways, learning alone — just inside a more polished building.</p>
+<p>For a while, I told myself I had found what I was looking for.</p>
+<p>The environment was more structured. The product was more serious. The teams were more specialized. The company was clearly capable of building and shipping software at scale.</p>
+<p>But after a while, something familiar started to creep in.</p>
+<p>That same uneasy feeling.</p>
+<p>Something still didn’t feel quite right.</p>
+<p>The difference this time was that the discomfort was harder to name.</p>
+<p>At TELUS, the problems had been obvious. We were moving too fast, doing too much without support, and ignoring all kinds of engineering fundamentals. At Symantec, the structure gave everything an appearance of correctness. It looked like a proper software organization. And in many ways, it was.</p>
+<p>But the more time I spent there, the more I noticed the gaps.</p>
+<p>The teams were siloed. Very siloed.</p>
+<p>There might be a team working on the remote backup client, another on remote access, another on backend services, another on the website, another on testing. Within my own team, we were all considered part of the “client” side, but in practice we each owned a narrow slice of the product and often knew little about what others were doing. I did the installer and build work. Someone else owned another piece. We didn’t really collaborate on each other’s areas. We didn’t do code reviews. We didn’t spend much time sharing knowledge or building a broader understanding of the system together.</p>
+<p>I had expected that coming to a big company would mean mentorship. I thought that being hired as a junior developer would naturally come with some kind of path for growth, some expectation that people more experienced than me would take the time to teach me the craft. I thought I would finally learn how to write clean, well-structured code from people who clearly knew better than I did.</p>
+<p>That didn’t really happen.</p>
+<p>Instead, I was given work and expected to complete it.</p>
+<p>There was some support, of course. Some people were helpful. But there was no deep or intentional culture of teaching. No one was really taking me under their wing and saying, “Here is how to think about systems. Here is how to reason about code quality. Here is how all these pieces fit together.” I was still, in many ways, learning alone.</p>
+<p>Just inside a more polished building.</p>
+<blockquote>Where Are the Experts?</blockquote>
+<p>This was one of the first big cracks in the story I had told myself.</p>
+<p>I had assumed that once I got to a big, successful software company, I would find the people who really knew. The experts. The people who understood everything. The people who could explain how good software was built, how teams should work, how architecture should be thought about, how all of it fit together.</p>
+<p>Instead, I found something more complicated.</p>
+<p>There were smart people. Very smart people.</p>
+<p>There were also strong teams, useful processes, and capable products.</p>
+<p>But the deeper, clearer sense of “someone really understands all of this and is guiding it intentionally” never fully materialized for me.</p>
+<p>The system felt less like a machine designed from the top down by master engineers and more like something that had grown over time, shaped by many decisions, many people, and many constraints. People understood their areas. Some understood them deeply. But the broader sense of coherence I had been looking for—what I imagined true expertise would feel like—was elusive.</p>
+<p>I kept waiting for the moment when someone would explain the whole thing in a way that made everything click.</p>
+<p>That moment never really came.</p>
 <h2>The Architecture Clue</h2>
-<p>My team lead once took me and another developer out after work to explain the product and the broader system. I tried to follow, but at some point, it all blurred together. So I asked him to draw it.</p>
-<p>Once he started sketching it out — boxes, lines, arrows — it started making sense. Not just to me. The conversation got sharper for everyone.</p>
-<p>Looking back, that moment mattered. It was one of the first times I saw that I naturally wanted a higher-level map of the system.</p>
+<p>There was one moment early on that, in hindsight, told me something important about myself.</p>
+<p>My team lead took me and another developer out after work one evening to explain the product and the broader system. He talked through the components, the teams, the technologies, the relationships between different layers of the product. We spent a long time talking. I was trying to follow, but at some point, it all blurred together.</p>
+<p>So I asked him to draw it.</p>
+<p>At the time, I felt embarrassed for even asking. I thought I had exposed myself as someone who didn’t “get it.” I assumed that competent professionals should be able to hold all of this in their heads and follow purely verbal explanations.</p>
+<p>But once he started sketching it out—boxes, lines, arrows—it started making sense to me.</p>
+<p>And not just to me.</p>
+<p>What I remember most is that it also seemed to make things clearer for the two senior people sitting there with me. The moment the system became visible, the conversation changed. It got sharper. More grounded. More coherent. It wasn’t just that the diagram helped me catch up—it helped everyone.</p>
+<p>At the time, I didn’t know what to make of that. I certainly didn’t think, “Maybe I have a talent for architectural thinking.” That would have sounded ridiculous to me then. I thought software architects were some elite class of technical genius, people far smarter and more experienced than I would ever be.</p>
+<p>But looking back, that moment mattered.</p>
+<p>It was one of the first times I saw that I naturally wanted a higher-level map of the system. I wanted to understand how things fit together. I wanted something everyone could point at and say, “Yes, this is what we mean.”</p>
+<p>I just didn’t yet recognize that instinct as valuable.</p>
+<h2>The Work Ethic Trap</h2>
+<p>As the years went on, another pattern deepened.</p>
+<p>I still didn’t feel like I belonged.</p>
+<p>I still felt like I was behind.</p>
+<p>I still assumed everyone around me knew more than I did and was naturally better suited to the work. So again, I leaned on effort. Long hours. Extra pressure. More grinding. More trying to prove I deserved to be there.</p>
+<p>There was also another layer of pressure at Symantec that fed this feeling. I saw how senior developers sometimes talked to junior developers. I saw impatience, ridicule, dismissiveness. It wasn’t always directed at me, but I saw enough of it to absorb the message. Mistakes were dangerous. Looking unsure was dangerous. Being visibly junior was dangerous.</p>
+<p>That reinforced everything I already believed about myself.</p>
+<h2>So again, rather than saying, “This environment has problems,” I told myself, “I need to get better faster.”</h2>
+<p>That was the pattern.</p>
+<p>When something felt wrong, I assumed the problem was me.</p>
+<h2>The Manager Who Made It Bearable</h2>
+<p>One of the most important lessons I learned at Symantec had less to do with architecture or code and more to do with management.</p>
+<p>My direct manager was one of the few people who really made the experience work for me. He supported me. He taught me things. He showed me parts of the product beyond my little slice of the installer. We laughed a lot. We spent time together outside work. I trusted him.</p>
+<p>At a company where much of the broader environment still felt isolating and fragmented, that relationship made a huge difference.</p>
+<p>Looking back, I think this was the first time I really understood how important a manager can be. Not in the abstract sense of “good leadership matters,” but in a very direct, practical way: the relationship with your manager can completely change how a job feels. The same work, the same company, the same team can become dramatically more bearable or dramatically more painful depending on that relationship.</p>
+<p>That stayed with me.</p>
+<h2>Seeing the Cracks More Clearly</h2>
+<p>Eventually, my manager left.</p>
+<p>He left to join a startup founded by former Symantec employees who believed there was a better way to build antivirus software—something more cloud-based, more immediate, less tied to stale local signature databases. At the time, that idea sounded radical. It also sounded exciting.</p>
+<p>When he left, someone else stepped into leadership—someone named Arif, who saw many of the same cracks I had been noticing.</p>
+<p>He wanted code reviews. He wanted more shared knowledge. He wanted people to know more than just their narrow slices. He wanted better engineering practices and broader visibility into the codebase. He even told me directly that I needed to get off the installer eventually—that it was unfair for me to be stuck there indefinitely doing the work nobody else wanted to do.</p>
+<p>That mattered to me more than I can really explain.</p>
+<p>Because for the first time, someone with authority was confirming something I had been feeling for years:</p>
+<p>Something really was off. The limitations and frustrations I had been experiencing weren’t just in my head.</p>
+<p>They were real.</p>
+<p>And yet, even then, I didn’t fully trust myself. I still looked outward for validation. I still interpreted my own instincts through whether someone else—someone who seemed more qualified—agreed with them.</p>
+<p>That pattern was stubborn.</p>
+<h2>Another Decision, Same Pattern</h2>
+<p>Eventually, the startup my old manager had joined came calling.</p>
+<p>It was exciting. They were building something new. Something faster, more cloud-driven, more modern. They were offering more money. And they wanted me to join.</p>
+<p>The irony was that the role they wanted me for still involved some of the same kind of work I had been doing—installer work and client-side systems. In some ways, it was another version of the same trap.</p>
+<p>And when I look back on how I made that decision, I can see the same old pattern playing out again.</p>
+<h2>I didn’t ask, “What do I actually want?”</h2>
+<h2>I asked, “What seems like the right move?”</h2>
+<p>What would other people think I should do? What looked smart? What looked like growth? What looked like the next step someone in my position was supposed to take?</p>
+<p>So I took it.</p>
+<p>And once again, I moved toward the strongest external signal, not the clearest internal one.</p>
 <h2>What I Took With Me</h2>
-<p>My time at Symantec taught me that structure doesn’t guarantee clarity. Process doesn’t guarantee quality. Large organizations can be professional and still deeply fragmented.</p>
-<p>I was still looking for experts. Still assuming someone else had the full picture. That pattern would follow me into the next chapter. Only this time, I really would find experts. And I would still feel just as lost.</p>
-<p><a href="../career-story.html">← Back to Career Story</a></p>
+<p>My time at Symantec taught me a lot, even if not in the way I had expected.</p>
+<p>It taught me that structure doesn’t guarantee clarity. That process doesn’t guarantee quality. That large organizations can be professional and still deeply fragmented. That owning a piece of a system is not the same as understanding the system. That mentorship is not something you can assume will exist just because a company is big and successful.</p>
+<p>It also taught me something about myself.</p>
+<p>I was still looking for experts. Still assuming someone else had the full picture. Still waiting to find the people who really knew what they were doing and could show me the way.</p>
+<p>But what I kept finding instead were partial answers. Capable people, useful processes, real expertise in narrow domains—but not the clean, coherent model of “professional software engineering” I had imagined from the outside.</p>
+<p>And because I still didn’t trust myself, I interpreted that uncertainty as my own failure to understand, rather than as a feature of the reality I was in.</p>
+<p>That pattern would follow me into the next chapter.</p>
+<p>Only this time, I really would find experts.</p>
+<p>And I would still feel just as lost.</p>
+
+<p><a href="../career-story.html?tab=full">← Back to Career Story</a></p>
 </main>
 </div>
 <footer class="footer">© Scott Kurz</footer>

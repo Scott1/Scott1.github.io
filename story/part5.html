@@ -37,42 +37,202 @@
 </div>
 
 <div class="story-page-layout with-tabs">
-<aside class="story-nav"><h3><a href="../career-story.html?tab=full">Series Intro</a></h3><a class="" href="part1.html">Part 1 — TELUS</a>
+<aside class="story-nav"><h3><a href="../career-story.html?tab=full">Series Intro</a></h3>
+<a class="" href="part1.html">Part 1 — TELUS</a>
 <a class="" href="part2.html">Part 2 — Symantec</a>
 <a class="" href="part3.html">Part 3 — Immunet</a>
 <a class="" href="part4.html">Part 4 — Sourcefire</a>
 <a class="active" href="part5.html">Part 5 — Early Cisco</a>
 <a class="" href="part6.html">Part 6 — Later Cisco</a>
-<a class="" href="part7.html">Part 7 — After Cisco</a></aside>
+<a class="" href="part7.html">Part 7 — After Cisco</a>
+</aside>
 <main class="story-main article">
 <h1>Part 5: Startup on Steroids, Architecture as Clarity, and the First Real Shift in How I Saw Myself</h1>
-<p>When Cisco acquired Sourcefire, I expected a clean break. I assumed the startup chapter would finally be swallowed by the larger enterprise.</p>
-<p>At first, though, that’s not what happened. The early period after the Cisco acquisition felt surprisingly good. It felt less like we had been absorbed and more like we had been given a much bigger engine.</p>
+<p>When Cisco acquired Sourcefire, I expected a clean break.</p>
+<p>I assumed that whatever had survived the first acquisition would finally be swallowed by the second. It seemed almost inevitable. Sourcefire was a meaningful step up in size and complexity from Immunet, but Cisco was something else entirely. Cisco was scale. Cisco was layers. Cisco was the kind of company where products became business units, where reporting structures mattered, where distance naturally opened up between the people building a thing and the people deciding what would happen to it.</p>
+<p>So I expected the startup chapter to end.</p>
+<p>At first, though, that’s not what happened.</p>
+<p>In fact, the early period after the Cisco acquisition felt surprisingly good.</p>
+<p>It felt less like we had been absorbed and more like we had been given a much bigger engine. More reach. More customers. More support. More visibility. More resources. There was more process beginning to show up and more organizational structure slowly forming around us, but for a while, the core still felt intact.</p>
+<p>It almost felt like Cisco was saying, unofficially if not explicitly: keep doing what you’re doing, keep the startup culture alive, keep moving fast, keep building good things, and we’ll leave you alone while plugging you into a much larger sales machine.</p>
+<p>And for a time, that was more or less what it felt like.</p>
 <h2>The Culture Was Still Alive</h2>
-<p>The first phase after the Cisco acquisition still felt energized. We were still close to the product and the reasons the product mattered.</p>
-<p>There were more meetings and more structure forming, but it still felt like one team. A bigger team, yes. A more visible team. But still a team.</p>
+<p>This is important, because in hindsight it’s easy to flatten these kinds of transitions and tell a simpler story: startup gets acquired, culture dies, bureaucracy takes over. But that wasn’t how it happened.</p>
+<p>The first phase after the Cisco acquisition still felt energized.</p>
+<p>We were still close to the product.<br>We still felt close to the reasons the product mattered.<br>We still had a sense that the people doing the work could influence what got built and how it got built.</p>
+<p>There were definitely signs of change:</p>
+<ul>
+  <li>reporting lines were becoming more formal</li>
+  <li>there were more meetings</li>
+  <li>some additional layers were starting to form</li>
+  <li>the number of people involved in decisions was increasing</li>
+</ul>
+<p>But it still felt like one team.</p>
+<p>A bigger team, yes. A more visible team. A more highly funded team. But still a team.</p>
+<p>And because of that, the work still had a kind of emotional charge to it. It still felt connected to something real. It didn’t yet feel like “work for the machine.” It still felt like product work.</p>
+<p>That mattered to me.</p>
+<h2>The Work Stayed Technical, But My Attention Kept Getting Pulled Elsewhere</h2>
+<p>Technically, I was still doing a lot of the same kinds of things I had been doing through the Sourcefire phase.</p>
+<p>I was still very much on the client side of the product. Still working close to the installer, the GUI, the endpoint behavior, and all the client-facing pieces that made the product visible, deployable, understandable, and usable.</p>
+<p>The product itself kept growing:</p>
+<ul>
+  <li>more capabilities</li>
+  <li>more enterprise expectations</li>
+  <li>more complexity in how information was gathered and surfaced</li>
+  <li>more interactions between the endpoint and the larger system around it</li>
+</ul>
+<p>So there was plenty of coding to do. Plenty of technical problems to solve. Plenty of implementation detail to live in.</p>
+<p>And yet, at the same time, I noticed my role around the edges of the work continuing to grow.</p>
+<p>I kept getting pulled into:</p>
+<p>explaining things to newer developers<br>helping teams align on how a feature should work<br>clarifying how different parts of the product related to each other<br>helping untangle misunderstandings that emerged when multiple people or teams were working on adjacent pieces of the same thing</p>
+<p>Just as in the Sourcefire chapter, I still didn’t think of this as a strength.</p>
+<p>If anything, I still experienced these moments with a kind of anticipatory anxiety. I was always afraid of being found out. Afraid that someone would ask the one question I couldn’t answer. Afraid that someone would realize I didn’t really belong in the room.</p>
+<p>But, again and again, once I was actually in the room, something else happened.</p>
+<p>I would get engaged.</p>
+<p>Once the problem became shared—once we were trying to understand something together, or make a plan together, or sort through ambiguity together—I found myself more energized than when I was alone, sitting in front of code, trying to force myself through some technical implementation that I could do, but didn’t always naturally want to do.</p>
+<p>That contrast kept growing.</p>
+<p>I still didn’t know what to make of it.</p>
+<p>But I could feel it.</p>
 <h2>The First Architecture Moment</h2>
-<p>I was working with a newer developer on a feature that touched multiple parts of the system. Instead of jumping straight into code, I started sketching out the system.</p>
-<p>Nothing fancy. A simple architecture diagram: boxes, arrows, labels, enough detail to explain boundaries and interactions.</p>
-<p>We walked through it together before he started coding, and the effect was immediate. The feature came together faster, with less confusion and less rework.</p>
+<p>There was one experience during this time that stood out because it captured something about how I think that I had never really named before.</p>
+<p>I was working with a newer developer on a feature that touched multiple parts of the system. In the past, the normal pattern would have been to jump into the code fairly quickly. Start implementing. Discover the shape of the problem while building. Adjust as needed. That’s how a lot of software work happens, especially in fast-moving environments.</p>
+<p>But this time, I paused.</p>
+<p>Instead of treating the implementation as the first step, I started sketching out the system.</p>
+<p>Nothing fancy. Just a simple architecture diagram:</p>
+<p>boxes for the major components<br>arrows to show how information moved<br>labels to make the intent visible<br>enough detail to explain the boundaries and interactions, but not so much that it became its own kind of complexity</p>
+<p>We walked through it together. We talked about each part. We made sure we had the same mental model of what we were trying to build before he started coding.</p>
+<p>And the effect of that was immediate.</p>
+<p>The feature came together much faster than it otherwise would have. There was less confusion, less rework, less “oh, I thought this part was supposed to do that.” It wasn’t just that the code got written. It was that the code got written with alignment behind it.</p>
+<p>That mattered.</p>
+<p>The result wasn’t just something that worked. It was something that was:</p>
+<ul>
+  <li>complete</li>
+  <li>understandable</li>
+  <li>easier to reason about afterward</li>
+  <li>easier for others to discuss because the underlying shape had already been made visible</li>
+</ul>
+<p>At the time, I didn’t stop and think, “This says something important about how I contribute.” I still wasn’t giving myself that kind of credit.</p>
+<p>But I did register that something about this way of working felt more natural to me than forcing my way through code first and clarity later.</p>
 <h2>The Second Architecture Moment</h2>
-<p>There was another meeting involving development and QA where we were trying to reason through a problem. People were talking in abstractions. The room was drifting toward confusion rather than clarity.</p>
-<p>So I drew a picture. A rough architecture diagram. A few boxes. A simple sequence of how the pieces related to each other.</p>
-<p>Almost immediately the temperature in the room changed. What had been abstract became concrete. People could point to the same thing and say, yes, this is the problem.</p>
-<h2>Meditation Becomes More Than an Idea</h2>
-<p>My meditation practice started to deepen. It didn’t make me instantly calm or wise, but every once in a while, there would be a glimpse.</p>
-<p>Moments where the usual internal noise softened. Moments where my sense of self — anxious, comparing, striving, defending — seemed less solid.</p>
+<p>There was another moment during this period that reinforced the same instinct, and in some ways it mattered even more because it happened in a room full of people instead of in a one-on-one situation.</p>
+<p>There was a meeting involving development and QA where we were trying to reason through a problem and a proposed solution. It wasn’t the biggest technical issue in the world, but the way it was being discussed was making it feel much bigger, much messier, and much more intimidating than it really was.</p>
+<p>People were talking in abstractions.<br>Different people were using the same words to mean different things.<br>The conversation was getting more and more frustrating, and the room was drifting toward confusion rather than clarity.</p>
+<p>I could feel that what was missing wasn’t intelligence. It wasn’t effort. It wasn’t commitment.</p>
+<p>It was shared understanding.</p>
+<p>So I did what had started to become instinctive for me.</p>
+<p>I drew a picture.</p>
+<p>Just a rough architecture diagram. A few boxes. A few lines. A simple sequence of how the pieces related to each other.</p>
+<p>I shared it and walked everyone through my understanding of the issue and the proposed fix. Then I asked the QA team if I had captured it correctly.</p>
+<p>They said yes.</p>
+<p>And almost immediately the temperature in the room changed.</p>
+<p>What had been abstract became concrete. What had been frustrating became understandable. People could finally point to the same thing and say, “Yes, this is the problem. Yes, this is what we’re trying to solve. Yes, this is the direction.”</p>
+<p>That moment really stayed with me.</p>
+<p>Because it showed me that architecture—at least in the form that was natural to me—wasn’t about creating some grand, polished, high-status technical artifact. It was about making complexity visible enough that people could think together.</p>
+<p>At the time, I still didn’t fully trust what that might mean about my strengths. But I knew enough to recognize that this wasn’t random. This was a pattern.</p>
+<p>When things got complicated, my instinct was to step back, simplify, and make the system visible.</p>
+<p>And that often helped.</p>
+<h2>Meditation Becomes Something More Than an Idea</h2>
+<p>While all of this was happening externally, something quieter—but in some ways more significant—was happening internally.</p>
+<p>My meditation practice started to deepen.</p>
+<p>Back at Immunet, meditation had entered my life almost as a kind of desperate curiosity. I was struggling with work, identity, meaning, and a vague sense that there had to be more to life than proving myself to people whose approval I could never quite secure. I had found mindfulness meditation through Aaron Swartz’s writing, tried it, and kept at it despite not really understanding what I was doing.</p>
+<p>At first, it didn’t seem to change much.</p>
+<p>But over time, especially during this early Cisco period, the practice became more consistent and more serious.</p>
+<p>And then it started to become real.</p>
+<p>Not in the sense that I suddenly became calm, wise, or enlightened. Most of the time, meditation still felt like sitting there with a busy mind, trying not to judge myself for how distracted I was. Most of the time it still felt like I wasn’t very good at it.</p>
+<p>But every once in a while, there would be a glimpse.</p>
+<p>A real shift.</p>
+<p>Moments where the usual internal noise softened. Moments where my sense of self—the anxious, comparing, striving, defending self I had been living inside for so long—seemed less solid. There were brief experiences of just being present, without all the usual overlays. Moments of connection, calm, and openness that didn’t feel like they were produced by effort.</p>
+<p>I don’t want to exaggerate them. These weren’t permanent transformations. They were small glimpses.</p>
+<p>But they mattered a lot.</p>
+<p>Because they showed me that the way I normally experienced my mind was not the only possible way to experience it.</p>
+<p>That changed something.</p>
+<h2>Understanding the Ego in a More Personal Way</h2>
+<p>Around the same time, I was also reading more explicitly about ideas like ego, identity, and imposter syndrome.</p>
+<p>I think this was the period where I first encountered the formal idea of imposter syndrome and realized that it described a lot of what I had been feeling my entire life. That didn’t magically solve it, but it gave me language for it.</p>
+<p>More importantly, meditation was helping me see that the voice of imposter syndrome wasn’t some ultimate truth about who I was. It was part of a pattern. Part of the ego structure I had built up over time:</p>
+<ul>
+  <li>the part of me that compared constantly</li>
+  <li>the part that feared being judged</li>
+  <li>the part that wanted to look competent and avoid visible failure</li>
+  <li>the part that believed being “found out” would somehow destroy me</li>
+</ul>
+<p>And for the first time, I started having moments where I could sense: if that voice isn’t actually the deepest truth of who I am, then maybe it doesn’t have to run everything.</p>
+<p>That didn’t make the fear disappear.</p>
+<p>But it created space.</p>
+<p>And that space was powerful.</p>
+<h2>The Gap Between Trigger and Response</h2>
+<p>One of the most concrete changes I noticed during this period was small, but important.</p>
+<p>A gap started to appear between things happening and my response to them.</p>
+<p>Before, the sequence was instant.</p>
+<p>Someone intimidating walks into the room → I tense up.<br>Someone highly technical starts talking → I assume I’m behind.<br>A conversation starts heading in a direction I don’t fully understand → I feel threatened or ashamed.</p>
+<p>It all happened so quickly that it felt automatic, almost like the world itself was causing the feeling.</p>
+<p>Meditation started to show me that there was, sometimes, a tiny pause.</p>
+<p>Not always. Not enough to transform every situation. But enough to notice.</p>
+<p>And in that tiny pause, I could sometimes see:</p>
+<ul>
+  <li>the reaction forming</li>
+  <li>the old story starting to kick in</li>
+  <li>the ego trying to protect itself</li>
+</ul>
+<p>Most of the time, I still reacted the same way.</p>
+<p>But now I could see that I didn’t absolutely have to.</p>
+<p>That was huge.</p>
+<p>Because it made change feel possible in a way it hadn’t before.</p>
 <h2>The VP Story</h2>
-<p>There was one person who crystallized this shift for me: a VP who had always intimidated me. He was passionate, physically imposing, deeply knowledgeable, direct, and charismatic.</p>
-<p>Then one day, after my meditation practice had deepened, I saw him walk into the room and instead of tightening, I felt calm. I remember thinking: he’s just another person.</p>
-<p>That moment did not erase years of conditioning, but it showed me that my relationship to these experts could change.</p>
+<p>There was one person in particular who crystallized this shift for me.</p>
+<p>Back in the Immunet days, and continuing into Sourcefire and Cisco, there was a VP in our office who intimidated me enormously. He was passionate about security, physically imposing, very confident, deeply knowledgeable, highly articulate, and completely comfortable speaking directly in ways that would not have passed for polished corporate behavior. He was one of those people who could fill a room instantly just by walking into it.</p>
+<h2>He was, in many ways, exactly the kind of person my mind had always turned into an “expert on steroids.”</h2>
+<p>What made it more complicated was that we actually got along well on a personal level. I wasn’t intimidated by him socially in the normal sense. I had my own edge to me, my own humor, my own non-HR-approved side, and in that social layer we connected fine.</p>
+<p>But in the technical and professional layer, I was terrified of him.</p>
+<p>Looking back now, I think I spent years around him in a kind of low-level fight-or-flight state. My body would tense. My mind would start scanning for danger. I would become hyper-aware of what I was saying, how I was being perceived, whether I might expose myself somehow.</p>
+<p>When we were in the small Immunet office, that meant I was living in that environment constantly.</p>
+<p>Then, during the Sourcefire growth phase, we got a bigger office and there was more physical separation. And that’s when I started noticing the pattern even more clearly. When he wasn’t around, the office felt one way. When he walked in, the whole energy of the room changed. And I don’t think I was the only one who felt it.</p>
+<p>Then one day, after my meditation practice had deepened a bit, I had a moment that really stuck with me.</p>
+<p>I was in the office getting a coffee. He walked in.</p>
+<p>And instead of the usual tightening, instead of that flush of stress and alertness, I felt calm.</p>
+<p>Not performatively calm. Actually calm.</p>
+<p>And I remember looking at him and thinking something like: he’s just another person. A strong personality, yes. Deeply knowledgeable, yes. Intimidating in presentation, yes. But underneath all that, just another human being.</p>
+<p>That moment was incredibly powerful for me.</p>
+<p>It didn’t erase years of conditioning. It didn’t suddenly make me free of fear.</p>
+<p>But it showed me, in lived experience, that my relationship to these “experts” could change.</p>
+<p>That mattered more than any intellectual understanding of meditation ever could.</p>
 <h2>Learning Versus Knowing</h2>
-<p>This period taught me the difference between learning something and knowing something. Learning is conceptual. Knowing is lived.</p>
-<p>I could read about ego, mindfulness, and non-reactivity, but none of it landed the same way until I experienced it directly.</p>
+<p>This period also taught me something else that would later become very important to me.</p>
+<p>There is a difference between learning something and knowing something.</p>
+<p>I had spent a lot of my life learning. Reading. Researching. Thinking. Studying. Trying to understand things before I acted on them. In many ways that was part of how I protected myself. If I could just learn enough first, maybe I wouldn’t fail when it mattered.</p>
+<p>Meditation showed me the limits of that.</p>
+<p>I could read all I wanted about:</p>
+<ul>
+  <li>ego</li>
+  <li>mindfulness</li>
+  <li>non-reactivity</li>
+  <li>present-moment awareness</li>
+</ul>
+<p>But none of it really landed the same way until I actually experienced one of those moments directly.</p>
+<p>That’s the difference between learning and knowing.</p>
+<p>Learning is conceptual. Knowing is lived.</p>
+<p>And once I saw that, I started to realize how much of my career had been spent in learning mode as a way of avoiding the risk of action. I would study, think, prepare, and stay small because taking real action would expose me to failure, judgment, and uncertainty.</p>
+<p>That insight did not immediately change how I worked.</p>
+<p>But it did start changing how I understood myself.</p>
 <h2>What This Period Changed</h2>
-<p>Architecture started to feel real to me: not as a grand formal discipline, but as a practical way of creating clarity and shared understanding.</p>
-<p>It also softened the grip of imposter syndrome. For the first time, it started to feel possible that the story I had been telling myself about who I was was not the only story available.</p>
-<p><a href="../career-story.html">← Back to Career Story</a></p>
+<p>This period didn’t completely transform me.</p>
+<p>But it changed the way I understood a lot of things.</p>
+<p>It made architecture start to feel real to me—not as a formal role, not as some grand abstract discipline, but as a practical way of creating clarity and shared understanding in complex systems.</p>
+<p>It deepened my awareness that some of the most valuable work I did happened before or around the code:</p>
+<ul>
+  <li>making systems visible</li>
+  <li>helping people align</li>
+  <li>turning confusion into something understandable</li>
+</ul>
+<p>It deepened my meditation practice enough that I began to experience real space between stimulus and response, even if only in glimpses.</p>
+<p>And it softened, just a little, the absolute grip of imposter syndrome.</p>
+<p>For the first time, it started to feel possible that maybe the story I had been telling myself about who I was—that I didn’t belong, that everyone else was more legitimate, that I just needed to catch up—was not the only story available.</p>
+<p>I didn’t yet know what to do with that.</p>
+<p>And externally, things were still working. The culture was still mostly alive. The product still mattered. The team still functioned. The original startup spirit hadn’t yet fully collapsed under the weight of growth.</p>
+<p>But the cracks were beginning to form.</p>
+<p>And once they really opened, everything would change.</p>
+
+<p><a href="../career-story.html?tab=full">← Back to Career Story</a></p>
 </main>
 </div>
 <footer class="footer">© Scott Kurz</footer>
