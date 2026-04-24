@@ -251,6 +251,10 @@ h3 {
   box-shadow: none;
 }
 
+.home-note-wide {
+  grid-column: 1 / -1;
+}
+
 .home-note p:last-child {
   margin-bottom: 0;
 }
