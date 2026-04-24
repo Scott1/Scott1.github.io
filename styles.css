@@ -424,8 +424,11 @@ h3 {
   align-self: start;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 14px;
-  border-right: 1px solid var(--border);
-  padding-right: 22px;
+  padding: 24px 24px 20px;
+  border: 1px solid #e4d8cb;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #fffdf9, #f7efe6);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.04);
 }
 
 .story-nav h3 {
@@ -445,7 +448,7 @@ h3 {
 }
 
 .story-nav a.active {
-  color: var(--text);
+  color: #7a442a;
   font-weight: 700;
 }
 
@@ -456,7 +459,7 @@ h3 {
 .tabs {
   display: flex;
   gap: 8px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid #dfd5ca;
   margin: 16px 0 32px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -470,9 +473,9 @@ h3 {
   font: inherit;
   line-height: 1.2;
   text-decoration: none;
-  border: 1px solid var(--border);
+  border: 1px solid #d9cfc2;
   border-bottom: none;
-  background: #f3f3f3;
+  background: #f5ede5;
   padding: 11px 16px;
   border-radius: 12px 12px 0 0;
   cursor: pointer;
@@ -481,8 +484,8 @@ h3 {
 }
 
 .tab-button.active {
-  background: var(--panel);
-  color: var(--text);
+  background: #fffdf9;
+  color: #7a442a;
 }
 
 .tab-panel { display: none; }
@@ -553,10 +556,41 @@ h3 {
   padding: 32px 24px 80px;
 }
 
+.story-shell {
+  padding-bottom: 0;
+}
+
+.story-intro {
+  margin-bottom: 0;
+}
+
+.story-bridge {
+  margin-bottom: 0;
+  padding: 24px 28px;
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at top right, rgba(220, 204, 184, 0.35), transparent 30%),
+    linear-gradient(180deg, #fffdf9, #f7efe6);
+  border: 1px solid #e4d8cb;
+}
+
+.story-bridge-title {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.story-bridge-copy {
+  margin: 0;
+  max-width: 48em;
+  color: #4d4d4d;
+}
+
 .story-tabs-bar {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 56px 24px 0;
+  padding: 20px 24px 0;
 }
 
 .story-tabs-bar .tabs {
@@ -578,6 +612,15 @@ h3 {
 .story-layout .story-main {
   max-width: 860px;
   margin: 0 auto;
+}
+
+.story-content {
+  padding: 30px 32px;
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at top right, rgba(220, 204, 184, 0.35), transparent 30%),
+    linear-gradient(180deg, #fffefb, #f8f1e8);
+  border: 1px solid #e4d8cb;
 }
 
 .story-layout.full-active {
@@ -651,9 +694,9 @@ h3 {
   }
   .story-nav {
     position: static;
-    border-right: 0;
-    border-bottom: 1px solid var(--border);
-    padding: 0 0 20px;
+    border-right: 1px solid #e4d8cb;
+    border-bottom: 1px solid #e4d8cb;
+    padding: 22px;
     margin-bottom: 28px;
   }
   .story-tabs-bar {
@@ -664,6 +707,9 @@ h3 {
   }
   .story-main.article h1 {
     font-size: clamp(32px, 9vw, 42px);
+  }
+  .story-content {
+    padding: 24px 22px;
   }
   .nav { align-items: flex-start; flex-direction: column; }
 }

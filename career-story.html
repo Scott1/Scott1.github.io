@@ -12,6 +12,7 @@
   <nav class="nav">
     <a class="brand" href="index.html">Scott Kurz</a>
     <div class="nav-links">
+      <a class="" href="index.html">Home</a>
       <a class="" href="resume.html">Resume</a>
       <a class="active" href="career-story.html">Career Story</a>
       <a class="" href="projects.html">Projects</a>
@@ -20,6 +21,13 @@
   </nav>
 </header>
 
+<main class="article expressive-page story-shell">
+  <section class="page-intro story-intro">
+    <p class="section-label">The longer arc</p>
+    <h1>Career Story</h1>
+    <p class="lede">This is the more human version of my career: not just what I did, but what shaped me, what challenged me, and what I slowly came to understand about work, meaning, and myself.</p>
+  </section>
+</main>
 
 <div class="story-tabs-bar">
   <div class="tabs">
@@ -30,14 +38,14 @@
 
 <main class="career-story-page with-tabs">
   <div id="story-layout" class="story-layout">
-    <aside class="story-nav"><h3><a href="career-story.html">Career Story</a></h3><a class="" href="story/part1.html">Part 1 — TELUS</a>
+    <aside class="story-nav"><h3><a href="career-story.html?tab=full">Series Intro</a></h3><a class="" href="story/part1.html">Part 1 — TELUS</a>
 <a class="" href="story/part2.html">Part 2 — Symantec</a>
 <a class="" href="story/part3.html">Part 3 — Immunet</a>
 <a class="" href="story/part4.html">Part 4 — Sourcefire</a>
 <a class="" href="story/part5.html">Part 5 — Early Cisco</a>
 <a class="" href="story/part6.html">Part 6 — Later Cisco</a>
 <a class="" href="story/part7.html">Part 7 — After Cisco</a></aside>
-    <section class="story-main article">
+    <section class="story-main article story-content">
       <div id="short" class="tab-panel active">
 <h1>A Short Version of My Career Story</h1>
 <p>I’ve spent more than 20 years working in software across telecom and cybersecurity, including roles at TELUS, Symantec, Immunet, Sourcefire, and Cisco.</p>
@@ -99,10 +107,10 @@ function activateTab(tabName) {
   }
   if (tabName === 'full') {
     layout.classList.add('full-active');
-    if (location.hash !== '#full') history.replaceState(null, '', '#full');
+    if (location.search !== '?tab=full') history.replaceState(null, '', '?tab=full');
   } else {
     layout.classList.remove('full-active');
-    if (location.hash) history.replaceState(null, '', location.pathname);
+    if (location.search) history.replaceState(null, '', location.pathname);
   }
 }
 
@@ -110,7 +118,9 @@ buttons.forEach(btn => {
   btn.addEventListener('click', () => activateTab(btn.dataset.tab));
 });
 
-if (location.hash === '#full') {
+const params = new URLSearchParams(location.search);
+
+if (params.get('tab') === 'full') {
   activateTab('full');
 }
 </script>
