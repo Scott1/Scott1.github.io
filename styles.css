@@ -193,9 +193,14 @@ h3 {
 }
 
 .tab-button {
+  appearance: none;
+  -webkit-appearance: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font: inherit;
+  line-height: 1.2;
+  text-decoration: none;
   border: 1px solid var(--border);
   border-bottom: none;
   background: #f3f3f3;
@@ -213,15 +218,6 @@ h3 {
 
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
-
-.story-layout {
-  display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: 42px;
-}
-
-.story-layout .story-nav { display: none; }
-.story-layout.full-active .story-nav { display: block; }
 
 .article {
   background: transparent;
@@ -282,179 +278,12 @@ h3 {
   font-size: 14px;
 }
 
-@media (max-width: 850px) {
-  .cards { grid-template-columns: 1fr; }
-  .page-grid, .story-layout {
-    display: block;
-    padding: 32px 20px 70px;
-  }
-  .story-nav {
-    position: static;
-    border-right: 0;
-    border-bottom: 1px solid var(--border);
-    padding: 0 0 20px;
-    margin-bottom: 28px;
-  }
-  .nav { align-items: flex-start; flex-direction: column; }
-}
-
-
-/* Career story tab layout fix */
-.story-layout {
-  display: block;
-}
-
-.story-layout .story-main {
-  max-width: var(--max);
-  margin: 0 auto;
-}
-
-.story-layout .story-nav {
-  display: none;
-}
-
-.story-layout.full-active {
-  display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: 42px;
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-.story-layout.full-active .story-main {
-  max-width: 860px;
-  margin: 0;
-}
-
-.story-layout.full-active .story-nav {
-  display: block;
-}
-
-@media (max-width: 850px) {
-  .story-layout.full-active {
-    display: block;
-  }
-}
-
-
-/* Unified chapter layout: keep left navigation aligned with Career Story full view */
-.story-page-layout {
-  display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: 42px;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 56px 24px 80px;
-}
-
-.story-page-layout .story-main {
-  max-width: 860px;
-}
-
-.story-page-layout main {
-  padding: 0;
-  margin: 0;
-}
-
-@media (max-width: 850px) {
-  .story-page-layout {
-    display: block;
-    padding: 32px 20px 70px;
-  }
-}
-
-
-/* Final unified story navigation geometry */
 .career-story-page {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 56px 24px 80px;
+  padding: 32px 24px 80px;
 }
 
-.career-story-page .tabs {
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.story-layout {
-  display: block !important;
-  max-width: 860px !important;
-  margin: 0 auto !important;
-  padding: 0 !important;
-}
-
-.story-layout .story-nav {
-  display: none !important;
-}
-
-.story-layout .story-main {
-  max-width: 860px !important;
-  margin: 0 auto !important;
-}
-
-.story-layout.full-active {
-  display: grid !important;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: 42px;
-  max-width: 1180px !important;
-  margin: 0 auto !important;
-  padding: 0 !important;
-}
-
-.story-layout.full-active .story-nav {
-  display: block !important;
-}
-
-.story-layout.full-active .story-main {
-  max-width: 860px !important;
-  margin: 0 !important;
-}
-
-.story-page-layout {
-  display: grid !important;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: 42px;
-  max-width: 1180px !important;
-  margin: 0 auto !important;
-  padding: 56px 24px 80px !important;
-}
-
-.story-page-layout .story-main {
-  max-width: 860px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-@media (max-width: 850px) {
-  .career-story-page,
-  .story-page-layout {
-    display: block !important;
-    padding: 32px 20px 70px !important;
-  }
-
-  .career-story-page .tabs {
-    max-width: none;
-  }
-
-  .story-layout,
-  .story-layout.full-active {
-    display: block !important;
-    max-width: none !important;
-  }
-
-  .story-layout.full-active .story-nav,
-  .story-page-layout .story-nav {
-    position: static;
-    border-right: 0;
-    border-bottom: 1px solid var(--border);
-    padding: 0 0 20px;
-    margin-bottom: 28px;
-  }
-}
-
-
-/* Story tabs shown on chapter pages */
 .story-tabs-bar {
   max-width: 1180px;
   margin: 0 auto;
@@ -463,72 +292,91 @@ h3 {
 
 .story-tabs-bar .tabs {
   max-width: 860px;
-  margin-left: 282px; /* nav width + gap: 240 + 42 */
-  margin-bottom: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.story-page-layout.with-tabs {
-  padding-top: 32px !important;
+.story-layout {
+  display: block;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.story-layout .story-nav {
+  display: none;
+}
+
+.story-layout .story-main {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.story-layout.full-active {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 42px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.story-layout.full-active .story-nav {
+  display: block;
+}
+
+.story-layout.full-active .story-main {
+  max-width: 860px;
+  margin: 0;
+}
+
+.story-page-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 42px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+.story-page-layout .story-main {
+  max-width: 860px;
+  margin: 0;
+  padding: 0;
+}
+
+.story-main.article h1 {
+  font-size: clamp(34px, 4.5vw, 48px);
+  letter-spacing: -0.025em;
+  margin-bottom: 28px;
 }
 
 @media (max-width: 850px) {
+  .cards { grid-template-columns: 1fr; }
+  .page-grid,
+  .career-story-page,
+  .story-page-layout {
+    display: block;
+    padding: 32px 20px 70px;
+  }
+  .story-layout,
+  .story-layout.full-active {
+    display: block;
+    max-width: none;
+  }
+  .story-nav {
+    position: static;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+    padding: 0 0 20px;
+    margin-bottom: 28px;
+  }
   .story-tabs-bar {
     padding: 32px 20px 0;
   }
   .story-tabs-bar .tabs {
     max-width: none;
-    margin-left: 0;
   }
-}
-
-
-/* v6: consistent story tabs + calmer chapter headings */
-.story-tabs-bar {
-  max-width: 1180px !important;
-  margin: 0 auto !important;
-  padding: 56px 24px 0 !important;
-}
-
-.story-tabs-bar .tabs,
-.career-story-page > .tabs {
-  max-width: 860px !important;
-  width: 100%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-bottom: 0 !important;
-}
-
-.career-story-page {
-  padding-top: 56px !important;
-}
-
-.career-story-page .story-layout {
-  margin-top: 32px !important;
-}
-
-.story-page-layout.with-tabs {
-  padding-top: 32px !important;
-}
-
-.story-main.article h1 {
-  font-size: clamp(34px, 4.5vw, 48px) !important;
-  letter-spacing: -0.025em !important;
-  margin-bottom: 28px !important;
-}
-
-@media (max-width: 850px) {
-  .story-tabs-bar {
-    padding: 32px 20px 0 !important;
-  }
-
-  .story-tabs-bar .tabs,
-  .career-story-page > .tabs {
-    max-width: none !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
   .story-main.article h1 {
-    font-size: clamp(32px, 9vw, 42px) !important;
+    font-size: clamp(32px, 9vw, 42px);
   }
+  .nav { align-items: flex-start; flex-direction: column; }
 }
