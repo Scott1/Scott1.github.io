@@ -37,7 +37,7 @@
 </div>
 
 <div class="story-page-layout with-tabs">
-<aside class="story-nav"><h3><a href="../career-story.html?tab=full">Series Intro</a></h3>
+<aside class="story-nav"><a class="story-nav-intro" href="../career-story.html?tab=full">Intro</a>
 <a class="" href="part1.html">Part 1 — TELUS</a>
 <a class="" href="part2.html">Part 2 — Symantec</a>
 <a class="" href="part3.html">Part 3 — Immunet</a>
@@ -270,6 +270,47 @@
 <p><a href="../career-story.html?tab=full">← Back to Career Story</a></p>
 </main>
 </div>
+<script>
+const storyNavQuery = window.matchMedia('(max-width: 850px)');
+
+function setStoryNavCollapsed(nav, toggle, collapsed) {
+  nav.classList.toggle('is-collapsed', collapsed);
+  toggle.setAttribute('aria-expanded', String(!collapsed));
+  toggle.setAttribute('aria-label', collapsed ? 'Expand series navigation' : 'Collapse series navigation');
+}
+
+document.querySelectorAll('.story-nav').forEach(nav => {
+  const toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'story-nav-toggle';
+  toggle.innerHTML = '<span class="story-nav-toggle-label">Chapters</span><span class="story-nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>';
+
+  const inner = document.createElement('div');
+  inner.className = 'story-nav-inner';
+  while (nav.firstChild) {
+    inner.appendChild(nav.firstChild);
+  }
+
+  nav.appendChild(toggle);
+  nav.appendChild(inner);
+
+  setStoryNavCollapsed(nav, toggle, storyNavQuery.matches);
+
+  toggle.addEventListener('click', () => {
+    setStoryNavCollapsed(nav, toggle, !toggle.getAttribute('aria-expanded') || toggle.getAttribute('aria-expanded') === 'true');
+  });
+
+  const handleChange = event => {
+    setStoryNavCollapsed(nav, toggle, event.matches);
+  };
+
+  if (typeof storyNavQuery.addEventListener === 'function') {
+    storyNavQuery.addEventListener('change', handleChange);
+  } else {
+    storyNavQuery.addListener(handleChange);
+  }
+});
+</script>
 <footer class="footer">© Scott Kurz</footer>
 </body>
 </html>
