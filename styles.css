@@ -576,6 +576,18 @@ h3 {
   margin-bottom: 28px;
 }
 
+.story-pagination {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 42px;
+  padding-top: 10px;
+}
+
+.story-pagination .button-link {
+  margin-top: 0;
+}
+
 @media (max-width: 850px) {
   .cards { grid-template-columns: 1fr; }
   .home-grid {
@@ -623,6 +635,13 @@ h3 {
   }
   .story-main.article h1 {
     font-size: clamp(32px, 9vw, 42px);
+  }
+  .story-pagination {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .story-pagination .button-link {
+    width: 100%;
   }
   .story-content {
     padding: 24px 22px;
