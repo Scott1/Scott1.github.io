@@ -159,12 +159,47 @@ h3 {
   padding-bottom: 18px;
 }
 
+.home-hero-layout {
+  display: block;
+}
+
+.home-hero-copy {
+  min-width: 0;
+}
+
+.home-hero-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 36px;
+  align-items: start;
+}
+
+.home-hero-heading {
+  min-width: 0;
+}
+
 .home-hero-minimal h1 {
   max-width: 11ch;
 }
 
 .home-hero-minimal .lede {
-  max-width: 30em;
+  max-width: 32em;
+  margin-top: 22px;
+}
+
+.home-hero-art {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 0;
+  min-height: clamp(340px, 40vw, 560px);
+}
+
+.home-hero-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .hero-statement {
@@ -592,6 +627,19 @@ h3 {
   .cards { grid-template-columns: 1fr; }
   .home-grid {
     grid-template-columns: 1fr;
+  }
+  .home-hero-top {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .home-hero-art {
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 0;
+  }
+  .home-hero-image {
+    width: 100%;
+    max-width: 460px;
   }
   .home-main {
     padding-top: 32px;
