@@ -192,12 +192,12 @@ h3 {
   justify-content: center;
   align-items: flex-start;
   min-width: 0;
-  min-height: clamp(340px, 40vw, 560px);
+  min-height: clamp(220px, 30vw, 420px);
 }
 
 .home-hero-image {
   display: block;
-  width: 100%;
+  width: clamp(220px, 32vw, 460px);
   max-width: 100%;
   height: auto;
 }
@@ -638,8 +638,7 @@ h3 {
     min-height: 0;
   }
   .home-hero-image {
-    width: 100%;
-    max-width: 460px;
+    width: clamp(200px, 42vw, 320px);
   }
   .home-main {
     padding-top: 32px;
@@ -695,4 +694,13 @@ h3 {
     padding: 24px 22px;
   }
   .nav { align-items: flex-start; flex-direction: column; }
+}
+
+@media (max-width: 560px) {
+  .home-hero-top {
+    gap: 18px;
+  }
+  .home-hero-image {
+    width: clamp(170px, 52vw, 240px);
+  }
 }
