@@ -167,6 +167,10 @@ h3 {
   min-width: 0;
 }
 
+.home-hero-label {
+  margin-bottom: 18px;
+}
+
 .home-hero-top {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -197,7 +201,7 @@ h3 {
 
 .home-hero-image {
   display: block;
-  width: clamp(220px, 32vw, 460px);
+  width: clamp(190px, 25vw, 360px);
   max-width: 100%;
   height: auto;
 }
@@ -629,16 +633,16 @@ h3 {
     grid-template-columns: 1fr;
   }
   .home-hero-top {
-    grid-template-columns: 1fr;
-    gap: 24px;
+    grid-template-columns: minmax(0, 1fr) minmax(140px, 0.88fr);
+    gap: clamp(14px, 3vw, 24px);
   }
   .home-hero-art {
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: flex-start;
     min-height: 0;
   }
   .home-hero-image {
-    width: clamp(200px, 42vw, 320px);
+    width: clamp(140px, 30vw, 240px);
   }
   .home-main {
     padding-top: 32px;
@@ -698,9 +702,13 @@ h3 {
 
 @media (max-width: 560px) {
   .home-hero-top {
-    gap: 18px;
+    grid-template-columns: minmax(0, 1fr) minmax(110px, 0.82fr);
+    gap: 12px;
+  }
+  .home-hero-minimal h1 {
+    font-size: clamp(30px, 8.5vw, 46px);
   }
   .home-hero-image {
-    width: clamp(170px, 52vw, 240px);
+    width: clamp(110px, 32vw, 170px);
   }
 }
