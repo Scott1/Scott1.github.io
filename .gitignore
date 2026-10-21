@@ -9,3 +9,7 @@ node_modules/
 dist/
 build/
 .cache/
+
+# Private career reference and application materials, excluded from the public site.
+.job-search/
+AGENTS.md
